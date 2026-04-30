@@ -15,7 +15,7 @@ confirmLgr.addEventListener("click", function() {
   if (userName.value == "" || password.value == "" || email.value == "") {
     alertText.innerHTML = "Please check the fields.";
     helpFill.style.visibility = "visible";
-    helpFill.innerHTML = `<a href="#"> Don't know how to fill </a>`
+    helpFill.innerHTML = `<a href="docsLgrRn.html"> Don't know how to fill </a>`
   }
   if (userName.value != "" && password.value != "" && email.value != "") {
     alertText.innerHTML = "Login successful!";
