@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+</head>
+<body>
+  <p>Edit your profile information here.</p>
+   <img src="" alt="user profile picture" id="profilePic">
+  
+
+  <p id="userName"></p>
+  <p>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </p>
+  <p>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+  </p>
+  <p>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+  </p>
+  <p id="saveMessage">
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+  </p>
+  <p>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </p>
+ 
+  <p>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="uk">UK</option>
+      <option value="australia">Australia</option>
+      <option value="other">Other</option>
+    </select>
+  </p>
+  <p>
+    <label for="identity">which defines you better:</label>
+    <select id="identity" name="identity">
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+      <option value="hobbyist">Hobbyist</option>
+      <option value="other">Other</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="interests">Interests:</label>
+   <select name="interests" id="interests">
+      <option value="technology">Technology</option>
+      <option value="sports">Sports</option>
+      <option value="music">Music</option>
+      <option value="art">Art</option>
+      <option value="other">Other</option>
+   </select>
+  </p>
+
+  <p>
+    <label for="age">Age:</label>
+   <select name="age" id="age">
+    <option value="below_10" disabled>Below 10</option>
+    <option value="10-12">10-12</option>
+     <option value="13-17">13-15</option>
+      <option value="16-17">16-17</option>
+      <option value="18-25" disabled>18-25</option>
+      <option value="26-35" disabled>26-35</option>
+      <option value="36-45" disabled>36-45</option>
+      <option value="46-55" disabled>46-55</option>
+      <option value="55+" disabled>55+</option>
+   </select>
+  </p>
+
+  <p>
+    <label for="role">Role:</label>
+    <select name="role" id="role">
+      <option value="moderator">Moderator</option>
+      <option value="admin">Admin</option>
+      <option value="sysAdmin">System Administrator</option>
+      <option value="user">User</option>
+      <option value="other">Other</option>
+
+    </select>
+  </p>
+  <button id="saveBtn">Save Changes</button>
+</body>
+</html>
