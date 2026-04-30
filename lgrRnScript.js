@@ -20,9 +20,32 @@ confirmLgr.addEventListener("click", function() {
   if (userName.value != "" && password.value != "" && email.value != "") {
     alertText.innerHTML = "Login successful!";
     helpFill.style.visibility = "hidden";
-    userName.value = "";
-    password.value = "";
-    email.value = "";
-    confirmLgr.innerHTML = `<a href="userAccount.html">Proceed</a>`;
+    confirmLgr.innerHTML = `<a href="userAccount.html" style="color: white; text-decoration: none;">Proceed</a>`;
   }
+  if (password.value == "") {
+    password.style.borderColor = "red";
+    password.placeholder = "please fill the password";
+  }
+  if (userName.value == "") {
+    userName.style.borderColor = "red";
+    userName.placeholder = "please fill the username";
+  }
+
+  if (email.value == "") {
+    email.style.borderColor = "red";
+    email.placeholder = "please fill the email";
+  }
+
+
+    if (password.value !== "") {
+    password.style.borderColor = "green";
+  }
+  if (userName.value !== "") {
+    userName.style.borderColor = "green";
+  }
+
+  if (email.value !== "") {
+    email.style.borderColor = "green";
+  }
+  
 });
