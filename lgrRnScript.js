@@ -3,23 +3,26 @@ lgrContainer = document.getElementById("lgrContainer");
 userName = document.getElementById("usrNm");
 password = document.getElementById("pssWrd");
 email = document.getElementById("eml");
-confirmLgr = document.getElementById("cnfrmBtn");
+confirmLgr = document.getElementById("confirmBtn");
+alertText = document.getElementById("alertText");
+helpFill = document.getElementById("helpFill");
 
 lgrBtn.addEventListener("click", function() {
     lgrContainer.style.visibility = "visible";
 });
 
 confirmLgr.addEventListener("click", function() {
-  if (userName.value == "") {
-    userName.style.borderColor = "red";
-    userName.placeholder = "Please enter your username";
+  if (userName.value == "" || password.value == "" || email.value == "") {
+    alertText.innerHTML = "Please check the fields.";
+    helpFill.style.visibility = "visible";
+    helpFill.innerHTML = `<a href="#"> Don't know how to fill </a>`
   }
-  else if (password.value == "") {
-    password.style.borderColor = "red";
-    password.placeholder = "Please enter your password";
-  }
-  else if (email.value == "") {
-    email.style.borderColor = "red";
-    email.placeholder = "Please enter your email";
+  if (userName.value != "" && password.value != "" && email.value != "") {
+    alertText.innerHTML = "Login successful!";
+    helpFill.style.visibility = "hidden";
+    userName.value = "";
+    password.value = "";
+    email.value = "";
+    confirmLgr.innerHTML = `<a href="userAccount.html">Proceed</a>`;
   }
 });
