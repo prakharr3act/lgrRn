@@ -8,6 +8,9 @@
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  top: 10px;
+  right: 10px;
+  position: absolute;
 }
 
 #lgrBtn:hover {
@@ -17,4 +20,37 @@
 #lgrBtn:active{
   background-color: #3e8e41;
   transform: scale(0.98);
+}
+
+.lgrContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.lgrInput{
+  padding: 10px;
+  margin: 1px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.lgrSubmit{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.lgrInput:focus{
+  border-color: #4CAF50;
+  outline: none;
 }
