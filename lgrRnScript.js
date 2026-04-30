@@ -1,5 +1,6 @@
-lgnBtn = document.getElementById("lgrBtn");
+lgrBtn = document.getElementById("lgrBtn");
+lgrContainer = document.getElementById("lgrContainer");
 
-lgnBtn.addEventListener("click", function() {
-    
+lgrBtn.addEventListener("click", function() {
+    lgrContainer.style.visibility = "visible";
 });
